@@ -46,6 +46,6 @@ clobber: clean
 
 # check generated files for violation of standards
 check: $(COSI_PROTO)
-	awk '{ if (length > 72) print NR, $$0 }' $? | diff - /dev/null
+	awk '{ if (length > 122) print NR, $$0 }' $? | diff - /dev/null
 
 .PHONY: clean clobber check
